@@ -5,7 +5,8 @@
         .center{
             text-align: center;
             background-image: url(images/agric\ images.jpg);
-            /* border: 5px solid blue; */
+            border: 10px solid blue;
+            border-radius: 20px;
             height: 180px;
             width: 300px;
             margin: 0 auto;
@@ -17,7 +18,30 @@
             border: 20px solid black;
             border-radius: 10px;
         }
-        
+        .nine
+        {
+            background-color: black;
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: aqua;
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: black;
+        }
+        .navbar li{
+            float: left;
+        }
     </style>
     <script src="https://kit.fontawesome.com/4f17e95ab4.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -25,10 +49,11 @@
     <title>homework6</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="pages/product.html">product</a></li>
+            <li><a href="pages/aboutus.html">aboutus</a></li>
             <li><a href="pages/contact.html">contact</a></li>
             <li><a href="pages/login.html">login</a></li>
             <li><a href="pages/signup.html">signup</a></li>
@@ -46,13 +71,13 @@
    
  
 
-    African food is <b>diverse,</b>and when younare talking about food, the culturecomes in too. With over 54 countries and 3,000 ethnic groups, Afeican food has much to offer. in this website , we will explore
+   <p style="background-color: aqua; border-radius: 60px;margin: 10px; padding: 20px;font-size: xx-large;" class="nine">African food is <b>diverse,</b>and when younare talking about food, the culturecomes in too. With over 54 countries and 3,000 ethnic groups, Afeican food has much to offer. in this website , we will explore
     some fascinating facts about African foods. The food is rich in flavor and reflects the continent's varied <b>history,</b> geography, and cultural <b>traditions.</b> Bottomline,you can be there and many African 
-    countries with great food. <br>
+    countries with great food. <span><button><a href="pages/product.html" style="text-decoration: none; font-size: larger;">learn more</a></button></span> 
+</p> 
 
 
-   <br> <button><a href="pages/product.html">learn more</a></button><br>
-
+  
 
     <img src="images/spices.jpg" alt="">
 
