@@ -59,25 +59,49 @@
 
         }
         .small-image :hover{
-            border-style: ridge;
+            border-style: inherit;
         }
-        .newsletter {
-            background-color: black;
-            color: white;
-        }
+
         .socials {
-            background-color: gray;
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+            letter-spacing: 100%;
+            justify-content: center ;
 
         }
-        .socialss {
-            text-align: justify;
-            
+        .big-socials{
+            background-color: gray;
         }
         body{
-            background: pink;
+            background: white;
+        }
+        .newsletter{
+            display: flex;
+            justify-content: left;
+            background-color: rgb(76, 76, 133);
+            padding: 20px 30px;
+            text-align: left;
+        }
+        .form {
+            background-color: bisque;
+            color: white;
+            padding: 5pt 10pt;
+            margin: 10px;
+        }
+        .font{
+            display: flex;
+            justify-content: flex-end;
+            gap: 50pt;
+        }    
+        .signup {
+            text-align: center;
+        }
+        .signupp {
+            text-align: center;
         }
         
-    
+        
     </style>
     <script src="https://kit.fontawesome.com/4f17e95ab4.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -162,24 +186,33 @@
 </div>
 
 <div class="newsletter">
-<h1>Newsletter</h1>
-<form action="">
-    <p>Would you like to receive monthly information about our products and services?</p>
-    <a href="" class="signup"></a>sign up here <i class="fa-solid fa-arrow-right"></i> 
-    <label for="email" class="email">Email</label>
-    <input type="email">
+ <div><h1>NEWSLETTER</h1>
+   Would you like to receive monthly information about our products and services?
+  <div class="signupp"> Sign up here <i class="fa-solid fa-arrow-right"></i> </div>
+   </div>
+   <div class="email">
+    <form action="" class="form">
+    <label for="email">Email</label>
+    <input type="email" name="" id="" required>
+    <input type="submit" value="subscribe">
+</form>
+</div>
+   </div>
+    
 </form>
 </div>
 <hr>
-<div class="socials">
-    <p><h4>Please follow us on our socials 🔥🔥🔥</p></h4>
-<footer class="socialss">
+<div class="big-socials">
+    <h4>Please follow us on our socials 🔥🔥🔥</h4>
+<footer>
     <ul>
+        <div class="socials">
         <li><i class="fa-brands fa-facebook"></i></li>
         <li><i class="fa-brands fa-x-twitter"></i></li>
         <li><i class="fa-brands fa-instagram"></i></li>
         <li><i class="fa-brands fa-youtube"></i></li>
     </ul>
+</div>
 </footer>
 </div>
     
