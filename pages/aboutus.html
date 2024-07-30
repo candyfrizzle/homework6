@@ -90,6 +90,43 @@
     background: transparent;
     border: 2px solid #f9004d;
    }
+   nav{
+    color: blue;
+    text-align: right;
+    padding: 5px;
+    font-family: sans-serif;
+    margin-right: 5px;
+}
+nav ul{
+    list-style-type: none;
+    justify-content: flex-end;
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px 30px;
+}
+nav a{
+    text-decoration: none;
+    color: burlywood;
+}
+
+ul .list_iteams{
+    display: inline-block;
+    justify-self: flex-end;
+}
+.iteams{
+    padding-right: 30px;
+    padding-top: 5px;
+}
+.head{
+    width: 200px;
+    height: 50px;
+    left: 50px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    justify-content: flex-end;
+}
 
 
 
@@ -109,17 +146,25 @@
 </style>
 </head>
 <body>
+    <header>
+        <nav class="navigation">
+            <ul class="container">
+                <section class="head">
+                    <h1>Afican Goodness</h1>
+                </section>
+    
+        </section>
+        <ul>
+            <li> <a href="../index.html" class="iteams">Home</a></li>
+                <li>  <a href="../pages/product.html"  class="iteams">Product</a></li>
+                <li> <a href="../pages/aboutus.html"  class="iteams">Aboutus</a></li>
+                    <li> <a href="contact.html"  class="iteams">Contact</a></li>
+                        <li> <a href="login.html"  class="iteams">Login<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                            <li> <a href="signup.html"  class="iteams">Signup</a></li>
+                        </ul>
+        </nav>
    
-   <nav class="navbar">
-    <ul>
-        <li><a href="../index.html">home</a></li>
-        <li><a href="product.html">product</a></li>
-        <li><a href="aboutus.html">aboutus</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="login.html">login</a></li>
-        <li><a href="signup.html">signup</a></li>
-    </ul>
-</nav>
+
 
         <section class="about">
             <div class="main">
