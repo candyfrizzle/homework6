@@ -11,8 +11,8 @@
             background-image: url(images/agric\ images.jpg);
             border: 10px solid blue;
             border-radius: 20px;
-            height: 180px;
-            width: 300px;
+            height: 200px;
+            width: 500px;
             margin: 0 auto;
 
             
@@ -23,29 +23,47 @@
             border-radius: 10px;
         }
         .nine
-        {
-            background-color: black;
-        }
-        .navbar ul{
-            list-style-type: none;
-            background-color: aqua;
-            margin: 0%;
-            padding: 0%;
-            overflow: hidden;
-        }
-        .navbar a{
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            display: block;
-            text-align: center;
-        }
-        .navbar a:hover{
-            background-color: black;
-        }
-        .navbar li{
-            float: left;
-        }
+
+nav{
+    color: blue;
+    text-align: right;
+    padding: 5px;
+    font-family: sans-serif;
+    margin-right: 5px;
+
+}
+nav ul{
+    list-style-type: none;
+    justify-content: flex-end;
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px 30px;
+}
+nav a{
+    text-decoration: none;
+    color: burlywood;
+}
+
+ul .list_iteams{
+    display: inline-block;
+    justify-self: flex-end;
+}
+.iteams{
+    padding-right: 30px;
+    padding-top: 5px;
+}
+.line{
+    width: 200px;
+    height: 50px;
+    left: 50px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    justify-content: flex-end;
+}
+            
+      
         .center-this{
             text-align: center;
             font-size: x-large;
@@ -59,7 +77,7 @@
         .small-image {
             width: 25%;
             margin: 10px;
-            border: 3px solid;color: black; 
+             
 
         }
     
@@ -134,6 +152,42 @@
             background-image: url(../image/image);
             
         }
+        #linking{
+            font-size: 40px;
+        }
+        #photo{
+            display: none;
+            gap: 10px;
+        }
+        .less{
+            display: none;
+            margin-left: 200px;
+        }
+        #extra{
+            margin-left: 500px;
+        }
+        .diff-image{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         
     </style>
@@ -143,19 +197,26 @@
     <title>homework6</title>
 </head>
 <body>
-    <nav class="navbar">
+    <header>
+        <nav class="navigation">
+            <ul class="container">
+                <section class="line">
+                    <h1>Afican Goodness</h1>
+                </section>
+    
+        </section>
         <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="pages/product.html">product</a></li>
-            <li><a href="pages/aboutus.html">aboutus</a></li>
-            <li><a href="pages/contact.html">contact</a></li>
-            <li><a href="pages/login.html">login</a></li>
-            <li><a href="pages/signup.html">signup</a></li>
-        </ul>
-    </nav>
+            <li> <a href="../index.html" class="iteams">Home</a></li>
+                <li>  <a href="pages/product.html"  class="iteams">Product</a></li>
+                <li> <a href="pages/aboutus.html"  class="iteams">Aboutus</a></li>
+                    <li> <a href="pages/contact.html"  class="iteams">Contact</a></li>
+                        <li> <a href="pages/login.html"  class="iteams">Login<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                            <li> <a href="pages/signup.html"  class="iteams">Signup</a></li>
+                        </ul>
+        </nav>
     <div class="center">
     <!-- <img class="main-image" src="images/agric images.jpg" alt=""> -->
-     <h1 id="head">Welcome to Africa Choice</h1>
+     <h1 id="head" style="color: darkgreen;">Welcome to Africa Choice</h1>
 
    <div class="explore" id="linking"><a href="pages/product.html" >Explore our products</a></div>
     
@@ -175,100 +236,106 @@
 
  <div class="big-image"> 
 <div class="small-image">
-    <img src="images/spices.jpg" alt="">
+    <img id="link" src="images/spices.jpg" width="350" alt="">
     <h3>African spices</h3>
  </div>
 
 <div class="small-image">
-  <img src="images/fruits.jpg" alt="">
+  <img id="land"src= "images/fruits.jpg" width="350" alt="">
   <h3>African fruits</h3>
 </div>
 
 <div class="small-image">
-<img src="images/leafy greens.jpg" alt="">
+<img id="rame" src="images/leafy greens.jpg" width="350" alt="">
 <h3>African leafy green</h3>
 </div>
 
 <div class="small-image">
-<img src="images/legumes.jpg" alt="">
+<img id="look" src="images/legumes.jpg"width="350" alt="">
 <h3>African legumes</h3>
 </div> 
 
 <div class="small-image">
-<img src="images/vegetables.jpg" alt="">
+<img id="rate" src="images/vegetables.jpg"width="350" alt="">
 <h3>African vegetables</h3>
 </div>
 
 <div class="small-image">
-<img src="images/wheat.jpg" alt="">
+<img id="lane" src="images/wheat.jpg"width="350" alt="">
 <h3>African wheat</h3>
 </div>
 
+
+<section>
+    <button class="seprate" id="extra">Click to Show More</button>
+</section>
+
+
+<section id="room" class="diff-image">
 <div class="small-image">
-<img src="images/maize.jpg" alt="">
+<img id="case" src="images/maize.jpg"width="350" alt="">
 <h3>African maize</h3>
 </div>
 
 <div class="small-image">
-<img src="images/barley.jpg" alt="">
+<img id="warm" src="images/barley.jpg"width="350" alt="">
 <h3>African barley</h3>
 </div>
 
 <div class="small-image">
-<img src="images/tuber.jpg" alt="">
+<img id="good" src="images/tuber.jpg"width="350" alt="">
 <h3>African tubers</h3>
 </div>
-</div>
-
 <div class="big-image" id="anotherimages"> 
     <div class="small-image">
-        <img src="images/spices.jpg" alt="">
+        <img id="king" src="images/spices.jpg"width="350" alt="">
         <h3>African spices</h3>
      </div>
     
     <div class="small-image">
-      <img src="images/fruits.jpg" alt="">
+      <img id="ring" src="images/fruits.jpg"width="350" alt="">
       <h3>African fruits</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/leafy greens.jpg" alt="">
+    <img id="sing" src="images/leafy greens.jpg"width="350" alt="">
     <h3>African leafy green</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/legumes.jpg" alt="">
+    <img id="seed" src="images/legumes.jpg"width="350" alt="">
     <h3>African legumes</h3>
     </div> 
     
     <div class="small-image">
-    <img src="images/vegetables.jpg" alt="">
+    <img id="hat" src="images/vegetables.jpg"width="350" alt="">
     <h3>African vegetables</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/wheat.jpg" alt="">
+    <img id="love" src="images/wheat.jpg"width="350" alt="">
     <h3>African wheat</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/maize.jpg" alt="">
+    <img id="see" src="images/maize.jpg"width="350" alt="">
     <h3>African maize</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/barley.jpg" alt="">
+    <img id="phone" src="images/barley.jpg"width="350" alt="">
     <h3>African barley</h3>
     </div>
     
     <div class="small-image">
-    <img src="images/tuber.jpg" alt="">
+    <img id="lape" src="images/tuber.jpg"width="350" alt="">
     <h3>African tubers</h3>
     </div>
-    </div>
-<div class="click">
-    <button id="click">click to show more</button>
-</div>
+    <section>
+        <button class="less" id="Showless"> Show less</button>
+    </section>
+
+
     
 
 <div class="newsletter">
