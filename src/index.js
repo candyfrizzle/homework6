@@ -128,11 +128,11 @@ function sizesecond(){
                         reveal.style.display=("block");
                         reveal.style.display=("flex");
                         reveal.style.display="wrap";
-                        reveal.style.justifyContent="space-around";
+                        reveal.style.justifyContent="space-between";
                         let missing=document.getElementById("extra");
                         missing.style.display="none";
-                        let hide =document.querySelector("less");
-                        hide.style.display="block";
+                        // let hide =document.querySelector("less");
+                        // hide.style.display="block";
 
                       }
                       let extra=document.getElementById("extra");
@@ -140,13 +140,13 @@ function sizesecond(){
 
                       //showless
                       function hide(){
-                        let lessimage=document.getElementById("photo");
-                        lessimage.style.display="none";
-                        let disappear=document.querySelector("less");
+                        let lessImage=document.getElementById("pictures");
+                        lessImage.style.display="center";
+                        let disappear=document.querySelector("showless");
                         disappear.style.display="none";
-                        let here=document.getElementById("extra");
+                      
                       }
-                      let off=document.querySelector("less");
+                      let off=document.querySelector("showless");
                       off.addEventListener("click",hide);
 
                                                  
